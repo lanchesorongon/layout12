@@ -1,0 +1,101 @@
+body {
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+.green {
+  background-color: green;
+  padding: 20px;
+  background: linear-gradient(to right, #00cc00, #006600);
+}
+
+.main-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+   /* Set the background color to green */
+
+}
+
+.main-nav li {
+  margin-right: 30px;
+  font-size: larger;
+}
+
+.push {
+  margin-left: auto;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 8px 16px;
+  border-radius: solid 5px;
+  transition: background-color 0.3s;
+}
+
+.main-nav a:hover {
+  background-color: darkgreen;
+  background: linear-gradient(to right, #00cc00, #006600);
+}
+  
+
+
+.push {
+  margin-left: auto;
+}
+
+/* Cover */
+.container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  font-size: 40px;
+  color: white;
+  position: relative;
+}
+
+.cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Grid */
+.grid-wrapper {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(245, 144, 11);
+}
+
+.box {
+  
+  background-color: transparent;
+  padding: 19px; /* Adjusted padding for better appearance */
+  margin: 20px;
+  width: 200px; /* Set a fixed width for the box */
+  height: 200px; /* Set a fixed height for the box */
+  overflow: hidden; /* Ensure that the image doesn't overflow the box */
+}
+
+.box > img {
+  width: 100%; /* Make the image fill the entire width of the box */
+  height: 100%; /* Make the image fill the entire height of the box */
+  object-fit: cover; /* Scale the image while preserving its aspect ratio */
+  object-position: center center; /* Center the image within the box */
+  border: 1px solid #333; /* Add a 2px solid border with a color of your choice (#333 in this example) */
+}
+.footer {
+  background-color: rebeccapurple;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 10vh;
+  font-size: 20px; /* Adjusted font size for better appearance */
+  color: white;
+}
